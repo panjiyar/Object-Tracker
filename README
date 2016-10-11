@@ -1,0 +1,27 @@
+Install the packages - numpy and opencv
+run "python final.py"
+To stop, ctrl+c on the terminal
+
+I have tried to answer the first question - 
+"Where is the vehicle in subsequent frames of the video given the location in the first frame?"
+
+This will automatically bring one pic after another,
+and at the same time try to create a box around the car.
+Comments are put in inside the code for understanding.
+
+Steps taken:
+
+1. RGB to HSV
+2. Found boundary values. They coincided with the road.
+3. Background subtraction, leaving  us with car and road
+4. Linear regression on rest of the points, which was basically
+   along the road.
+5. Found the car by moving a little above the line found by 
+   linear regression.
+6. Created a binding box, also counted for tires which were lost
+   since they were on the same level as the road.
+
+If I had more time, I could have probably added k nearest neighbours
+to the first half of the dataset. It wouldn't have worked after that 
+because of the huge changes in each frame.
+Also, I would have tried to figure out what happens in the last frame.
