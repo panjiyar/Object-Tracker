@@ -132,3 +132,4 @@ def reader(file, tmp, prev_center, prev_length, prev_width):
 	cv2.destroyWindow(file) 
 
 	return [left_end,right_end,top_end,bottom_end]
+
