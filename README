@@ -2,7 +2,7 @@ Install the packages - numpy and opencv
 run "python final.py"
 To stop, ctrl+c on the terminal
 
-I have tried to answer the first question - 
+I have tried to answer the question - 
 "Where is the vehicle in subsequent frames of the video given the location in the first frame?"
 
 This will automatically bring one pic after another,
@@ -21,7 +21,5 @@ Steps taken:
 6. Created a binding box, also counted for tires which were lost
    since they were on the same level as the road.
 
-If I had more time, I could have probably added k nearest neighbours
-to the first half of the dataset. It wouldn't have worked after that 
-because of the huge changes in each frame.
-Also, I would have tried to figure out what happens in the last frame.
+A video has been added to show what actually happens. 
+Sorry, but it is a little long and slow, so feel free to speed it up.
