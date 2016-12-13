@@ -1,3 +1,7 @@
+__author__ = "Suchit Panjiyar"
+__email__ = "panjiyar.suchit@gmail.com"
+
+
 import cv2
 import numpy as np
 
